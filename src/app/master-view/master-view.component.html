@@ -1,0 +1,9 @@
+<igx-avatar src="/assets/images/avatar-image.svg" [roundShape]="true" class="avatar"></igx-avatar>
+<igx-avatar initials="AB" [roundShape]="true" class="avatar"></igx-avatar>
+<igx-grid primaryKey="id" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+  <igx-column field="id" dataType="number" header="id" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="name" dataType="string" header="name" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="category.id" dataType="number" header="category id" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="category.name" dataType="string" header="category name" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="status" dataType="string" header="status" [sortable]="true" [selectable]="false"></igx-column>
+</igx-grid>
